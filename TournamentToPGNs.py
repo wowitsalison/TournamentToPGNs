@@ -11,7 +11,7 @@ tournament_name = "Zukertort_Steinitz_1886" # Avoid spaces for file naming
 headers = { "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0 Safari/537.36" }
 
 
-def download_pgns(tournament_url, save_location, headers):
+def download_pgns(tournament_link, save_location, headers):
     # Fetch the tournament page
     tournament_response = requests.get(tournament_url, headers=headers)
     try:
